@@ -24,14 +24,17 @@ const WorkDetail = ({ works }) => {
   }
 
   return (
-
     <>
       <Navbar />
 
           { router.isFallback ? (
-            <h1 className="mb-12 text-3xl font-bold leading-tight tracking-tighter text-center md:leading-none md:text-left">
-              Loading
-            </h1>
+            <div className="max-w-screen-lg mx-auto mt-6 md:mt-12">
+              <div className="w-10/12 mx-auto">
+                <h1 className="mb-12 text-3xl font-bold leading-tight tracking-tighter text-center font-montserrat md:leading-none md:text-left">
+                  loading...
+                </h1>
+              </div>
+            </div>
           ) : (
             <main>
               <div className="max-w-screen-lg mx-auto mt-6 md:mt-12">
