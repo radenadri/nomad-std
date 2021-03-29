@@ -1,7 +1,7 @@
 import Navbar from '../partials/Navbar'
 import Footer from '../partials/Footer'
 
-const Main = ({ children, isFull }) => (
+const Main = ({ children, isFull, aboutCarousel, aboutGallery }) => (
   <>
     <Navbar />
 
@@ -12,6 +12,9 @@ const Main = ({ children, isFull }) => (
         
       </div>
     </main>
+    
+    { aboutCarousel }
+    { aboutGallery }
 
     <Footer />
     

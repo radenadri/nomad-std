@@ -35,9 +35,7 @@ const Navbar = () => {
           <Link href="/about">
             <a className="px-4 text-lg font-bold text-black font-montserrat">about</a>
           </Link>
-          <Link href="/">
-            <a className="px-4 text-lg font-bold text-black font-montserrat">say hello 👋</a>
-          </Link>
+          <a href="mailto:Nomadpeoplee@gmail.com?subject=Interested to use your service" className="px-4 text-lg font-bold text-black font-montserrat">say hello 👋</a>
         </nav>
 
       </div>
@@ -48,9 +46,7 @@ const Navbar = () => {
         <Link href="/about">
           <a className="py-2 text-lg font-bold text-black font-montserrat">about</a>
         </Link>
-        <Link href="/">
-          <a className="py-2 text-lg font-bold text-black font-montserrat">say hello 👋</a>
-        </Link>
+        <a href="mailto:Nomadpeoplee@gmail.com?subject=Interested to use your service" className="py-2 text-lg font-bold text-black font-montserrat">say hello 👋</a>
       </div>
   
     </header>

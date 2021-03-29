@@ -10,3 +10,32 @@
 .slick-track {
   display: flex;
 }
+
+.long-description p:not(:first-child) {
+  @apply mt-4;
+}
+
+.right-value p:not(:first-child) {
+  @apply mt-4;
+}
+
+.right-cta-value h4 {
+  @apply text-3xl;
+  @apply font-bold;
+  @apply text-black;
+  @apply font-montserrat;
+}
+
+.right-cta-value p {
+  @apply mt-4;
+  @apply text-xl;
+  @apply text-black;
+}
+
+.right-cta-value a {
+  @apply text-blue-600;
+}
+
+.right-cta-value a:hover {
+  @apply underline;
+}
