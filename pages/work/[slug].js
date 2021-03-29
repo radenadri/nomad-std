@@ -32,7 +32,7 @@ const WorkDetail = ({ works }) => {
         <div className="w-10/12 mx-auto">
 
           <Head>
-            <title>Nomad | {works.name}</title>
+            <title>Nomad | {works?.name}</title>
             <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
           </Head>
@@ -45,26 +45,26 @@ const WorkDetail = ({ works }) => {
             <>
               <div>
                 <Fade bottom>
-                  <h1 className="text-3xl font-bold text-center lowercase md:leading-normal lg:leading-tight md:text-5xl lg:text-6xl font-montserrat">{works.name}</h1>
+                  <h1 className="text-3xl font-bold text-center lowercase md:leading-normal lg:leading-tight md:text-5xl lg:text-6xl font-montserrat">{works?.name}</h1>
                 </Fade>
                 <Fade bottom>
-                  <p className="w-full mx-auto mt-4 text-xl text-center md:mt-8 md:w-8/12">{works.short_description}</p>
+                  <p className="w-full mx-auto mt-4 text-xl text-center md:mt-8 md:w-8/12">{works?.short_description}</p>
                 </Fade>
               </div>
 
               <div className="mt-10">
                 <Fade bottom>
                   <div className="w-full aspect-w-16 aspect-h-9">
-                    <Image className="object-cover" src={showImage(works.image.url)} alt={showImage(works.image.url)} layout="fill" />
+                    <Image className="object-cover" src={showImage(works?.image.url)} alt={showImage(works?.image.url)} layout="fill" />
                   </div>
                 </Fade>
                 <Fade bottom>
-                  <div className="max-w-3xl mx-auto mt-10 text-xl text-black md:mt-10 long-description" dangerouslySetInnerHTML={{ __html: works.content }}></div>
+                  <div className="max-w-3xl mx-auto mt-10 text-xl text-black md:mt-10 long-description" dangerouslySetInnerHTML={{ __html: works?.content }}></div>
                 </Fade>
               </div>
 
-              <Carousel carousel={works.carousel} />
-              <Gallery gallery={works.gallery} />
+              <Carousel carousel={works?.carousel} />
+              <Gallery gallery={works?.gallery} />
             </>
           )}
           
