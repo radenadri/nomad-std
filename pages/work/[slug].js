@@ -6,8 +6,6 @@ import Image from 'next/image'
 
 import Fade from 'react-reveal/Fade'
 
-import Main from '../../components/layouts/Main'
-
 import Carousel from '../../components/Carousel'
 import Gallery from '../../components/Gallery'
 import Navbar from '../../components/partials/Navbar'

@@ -1,5 +1,7 @@
 import Slider from 'react-slick'
 
+import { SRLWrapper } from 'simple-react-lightbox'
+
 import Fade from 'react-reveal/Fade'
 
 import CarouselItem from './CarouselItem'
@@ -26,14 +28,22 @@ const Carousel = ({ carousel }) => {
     ]
   };
 
+  const options = {
+    caption: {
+      showCaption: false
+    }
+  }
+
   return (
     <Fade bottom>
       <div className="mt-10">
-        <Slider {...slickSettings}>
-          {
-            carousel.map(pic => <CarouselItem key={pic.id} {...pic} />)
-          }
-        </Slider>
+        <SRLWrapper options={options}>
+          <Slider {...slickSettings}>
+            {
+              carousel.map(pic => <CarouselItem key={pic.id} {...pic} />)
+            }
+          </Slider>
+        </SRLWrapper>
       </div>
     </Fade>
   )

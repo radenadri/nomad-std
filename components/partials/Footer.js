@@ -9,7 +9,7 @@ const Footer = () => (
       <Link href="https://www.instagram.com/nomad.std">
         <a className="px-4 text-lg font-bold text-black font-montserrat" target="_blank">instagram</a>
       </Link>
-      <Link href="https://wa.me/+62895333746615?text=Halo%252C%2520saya%2520tertarik%2520dengan%2520jasa%2520foto%2520dan%2520videonya.">
+      <Link href="https://wa.me/+62895333746615?text=Halo, saya tertarik dengan jasa foto dan videonya.">
         <a className="px-4 text-lg font-bold text-black font-montserrat" target="_blank">whatsapp</a>
       </Link>
     </nav>

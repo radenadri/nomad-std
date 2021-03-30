@@ -1,8 +1,12 @@
 import '../styles/globals.css'
 
+import SimpleReactLightbox from 'simple-react-lightbox'
+
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <Component {...pageProps} />
+    <SimpleReactLightbox>
+      <Component {...pageProps} />
+    </SimpleReactLightbox>
   )
 }
 

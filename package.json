@@ -17,6 +17,7 @@
     "react-slick": "^0.28.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
+    "simple-react-lightbox": "^3.6.4",
     "strapi-provider-upload-google-cloud-storage": "^3.4.6"
   },
   "devDependencies": {
